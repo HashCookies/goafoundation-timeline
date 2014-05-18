@@ -240,7 +240,8 @@ textarea {
         height: 100%;
       }*/
 body {
-  font-family: "freightsans", FreightSans, "Source Sans Pro", Helvetica, Arial, sans-serif; }
+  font-family: "freightsans", FreightSans, "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #2e313d; }
 
 #header-logo {
   width: 73px;
@@ -263,19 +264,21 @@ body {
   z-index: -1; }
 
 #intro-slide {
-  background: #fffaf3;
+  background: #f9f8ef;
   padding-top: 0;
   padding-bottom: 0;
   height: 180px; }
   #intro-slide .inner {
-    padding: 25px 5%; }
+    padding-top: 30px; }
 
 #intro-logo {
-  font-weight: bold;
-  text-transform: uppercase;
+  /*font-weight: bold;*/
+  /*text-transform: uppercase;*/
+  font-family: FreightText, Times, serif;
   font-size: 60px;
+  margin-bottom: 0px;
   line-height: 110%;
-  color: #352827;
+  color: #b7c11e;
   margin-top: 0;
   font-style: italic; }
 
@@ -293,20 +296,22 @@ body {
 h3 {
   font-size: 24px;
   font-family: FreightText, Times, serif;
-  color: #764100;
+  color: #a73c30;
   margin-bottom: 0;
   margin-top: 0; }
 
 p {
   font-size: 18px;
-  margin: 0px 0 10px; }
+  margin: 0px 0 10px;
+  color: #2e313d; }
 
 .meta-year {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "freightsans", FreightSans, "Source Sans Pro", Helvetica, Arial, sans-serif;
-  text-align: right; }
+  text-align: right;
+  color: #2e313d; }
 
 .slide4 {
   background: url("../images/fcr.jpg") no-repeat;

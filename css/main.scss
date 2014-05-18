@@ -318,10 +318,15 @@ textarea {
 
 $sans: "freightsans", FreightSans, "Source Sans Pro", Helvetica, Arial, sans-serif;
 $serif: FreightText, Times, serif;
-
+$green: #B7C11E;
+$lightBrown: #F2EFDC;
+$vibRed: #A73C30;
+$blueGreen: #23A38F;
+$body: #2E313D;
 
 body {
 	font-family: $sans;
+	color: $body;
 	
 }
 
@@ -349,22 +354,24 @@ body {
 }
 
 #intro-slide {
-	background: #fffaf3;
+	background: lighten($lightBrown, 5%);
 	padding-top: 0;
 	padding-bottom: 0;
 	height: 180px;
 	.inner {
-		padding: 25px 5%;
+		padding-top: 30px;
 	}
 
 }
 
 #intro-logo {
-	font-weight: bold;
-	text-transform: uppercase;
+	/*font-weight: bold;*/
+	/*text-transform: uppercase;*/
+	font-family: $serif;
 	font-size: 60px;
+	margin-bottom: 0px;
 	line-height: 110%;
-	color: #352827;
+	color: $green;
 	margin-top: 0;
 	font-style: italic;
 }
@@ -386,7 +393,7 @@ body {
 h3 {
 	font-size: 24px;
 	font-family: $serif;
-	color: #764100;
+	color: $vibRed;
 	margin-bottom: 0;
 	margin-top: 0;
 	
@@ -395,6 +402,7 @@ h3 {
 p {
 	font-size: 18px;
 	margin: 0px 0 10px;
+	color: $body;
 }
 
 .meta-year {
@@ -403,6 +411,7 @@ p {
 	font-weight: bold;
 	font-family: $sans;
 	text-align: right;
+	color: $body;
 }
 
 .slide4 {
