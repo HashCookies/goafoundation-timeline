@@ -255,21 +255,27 @@ body {
   -webkit-transition-duration: 400ms; }
 
 .header-img {
-  background: #fffaf3 url(../images/main-bg.jpg) left bottom;
-  background-size: cover;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
-  z-index: -1; }
+  z-index: -10; }
 
 #intro-slide {
   background: #f9f8ef;
   padding-top: 0;
   padding-bottom: 0;
-  height: 180px; }
+  height: 180px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -5; }
   #intro-slide .inner {
     padding-top: 30px; }
+
+.header-img.parallaxed {
+  z-index: -1; }
 
 #intro-logo {
   /*font-weight: bold;*/
@@ -285,7 +291,9 @@ body {
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: white; }
+  background: white;
+  z-index: 12;
+  position: relative; }
 
 .row {
   margin-bottom: 50px; }
@@ -314,18 +322,13 @@ p {
   color: #2e313d; }
 
 .slide4 {
-  background: url("../images/fcr.jpg") no-repeat;
-  background-size: cover;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 24px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.54); }
-
-.slide4 p {
-  font-size: 33px; }
-
-.slide4 h3 {
-  color: #ffffff;
-  font-size: 42px;
-  font-weight: bold;
-  line-height: 110%; }
+  background: transparent;
+  padding-bottom: 50px; }
+  .slide4 p {
+    color: white;
+    font-size: 24px; }
+  .slide4 h3 {
+    color: white;
+    font-size: 36px; }
+  .slide4 .meta-year {
+    color: #a73c30; }

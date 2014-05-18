@@ -11,22 +11,14 @@ $(document).ready(function() {
 	
 	var bigDate = $('.big-date');
 	
-	$('#intro-slide').css({ marginTop: winH - 180 });
-	$('.header-img').height(winH - 180);
+
+	$('.header-img').height(winH - 180).anystretch('file://localhost/Users/hashcookies/Dropbox/GoaFoundation.com/timeline/images/main-bg.jpg', { elPosition: 'fixed'} );
 	
-	$main.onepage_scroll({
-		beforeMove: function(index) {
-			console.log(index);
-			var current = $main.find('section:eq(' + index + ')');
-			var currDate = current.attr('data-year');
-			bigDate.text(currDate);
-		}
-	});
+	$('.slide2').css({ marginTop: winH });
 	
-	$('#intro-slide .inner').css({
-		
-	});
-	
+	$('.slide4').waypoint(function() {
+		$('.header-img').height(winH).addClass('parallaxed').anystretch('file://localhost/Users/hashcookies/Dropbox/GoaFoundation.com/timeline/images/3993981365_e93f8c8079_o.jpg', { speed: 'slow' });
+	}, { offset: '100%' });	
 	
 
 	
