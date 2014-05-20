@@ -424,17 +424,26 @@ p {
 }
 
 .slide4 {
-	background: transparent;
+	background: transparentize(darken($vibRed, 50%), 0.3);
 	padding-bottom: 50px;
+	padding-top: 150px;
 	p {
-		color: white;
 		font-size: 24px;
+			color: white;
 	}
 	h3 {
-		color: white;
 		font-size: 36px;
+			color: white;
 	}
 	.meta-year {
 		color: $vibRed;
 	}
+}
+
+.section img {
+	width: 100%;
+}
+
+.img-block {
+	margin-bottom: 25px;
 }

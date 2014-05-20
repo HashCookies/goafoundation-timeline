@@ -322,13 +322,20 @@ p {
   color: #2e313d; }
 
 .slide4 {
-  background: transparent;
-  padding-bottom: 50px; }
+  background: rgba(0, 0, 0, 0.7);
+  padding-bottom: 50px;
+  padding-top: 150px; }
   .slide4 p {
-    color: white;
-    font-size: 24px; }
+    font-size: 24px;
+    color: white; }
   .slide4 h3 {
-    color: white;
-    font-size: 36px; }
+    font-size: 36px;
+    color: white; }
   .slide4 .meta-year {
     color: #a73c30; }
+
+.section img {
+  width: 100%; }
+
+.img-block {
+  margin-bottom: 25px; }
