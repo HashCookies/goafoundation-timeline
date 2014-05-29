@@ -20,11 +20,12 @@ $(document).ready(function() {
 		$('.header-img').height(winH - 180).removeClass('parallaxed').anystretch('file://localhost/Users/hashcookies/Dropbox/GoaFoundation.com/timeline/images/main-bg.jpg', { elPosition: 'fixed'} );
 	});
 	
-	$('.slide4').waypoint(function() {
-		$('.header-img').height(winH).addClass('parallaxed').anystretch('file://localhost/Users/hashcookies/Dropbox/GoaFoundation.com/timeline/images/fcr.jpg', { speed: 'slow' });
+	$('.full-bg').waypoint(function() {
+		url = $(this).attr('data-stretch');
+		$('.header-img').height(winH).addClass('parallaxed').anystretch(url, { speed: 'slow' });
 	}, { offset: '100%' });	
 	
-
+	
 	
 });
 

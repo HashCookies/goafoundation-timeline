@@ -423,8 +423,8 @@ p {
 	color: $body;
 }
 
-.slide4 {
-	background: transparentize(darken($vibRed, 50%), 0.3);
+.full-bg {
+	background: transparentize(darken($vibRed, 50%), 0.4);
 	padding-bottom: 50px;
 	padding-top: 150px;
 	p {

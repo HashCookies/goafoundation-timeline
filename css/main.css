@@ -321,17 +321,17 @@ p {
   text-align: right;
   color: #2e313d; }
 
-.slide4 {
-  background: rgba(0, 0, 0, 0.7);
+.full-bg {
+  background: rgba(0, 0, 0, 0.6);
   padding-bottom: 50px;
   padding-top: 150px; }
-  .slide4 p {
+  .full-bg p {
     font-size: 24px;
     color: white; }
-  .slide4 h3 {
+  .full-bg h3 {
     font-size: 36px;
     color: white; }
-  .slide4 .meta-year {
+  .full-bg .meta-year {
     color: #a73c30; }
 
 .section img {
