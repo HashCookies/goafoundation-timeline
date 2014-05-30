@@ -11,18 +11,14 @@ $(document).ready(function() {
 	
 	var bigDate = $('.big-date');
 	
+	var $bgImg = $('#bg-img');
 
-	$('.header-img').height(winH - 180).anystretch('file://localhost/Users/hashcookies/Dropbox/sites/timeline/images/main-bg.jpg', { elPosition: 'fixed'} );
+	$bgImg.height(winH);
 	
-	$('.slide2').css({ marginTop: winH });
-	
-	$('#intro-slide').waypoint(function() {
-		$('.header-img').height(winH - 180).removeClass('parallaxed').anystretch('file://localhost/Users/hashcookies/Dropbox/sites/timeline/images/main-bg.jpg', { elPosition: 'fixed'} );
-	});
 	
 	$('.full-bg').waypoint(function() {
 		url = $(this).attr('data-stretch');
-		$('.header-img').height(winH).addClass('parallaxed').anystretch(url, { speed: 'slow' });
+		$bgImg.height(winH).addClass('parallaxed').anystretch(url, { speed: 'slow', elPosition: 'fixed' });
 	}, { offset: '100%' });	
 	
 	
