@@ -1,4 +1,4 @@
-$sans: "freightsans", FreightSans, "Source Sans Pro", Helvetica, Arial, sans-serif;
+$sans: "Open Sans", FreightSans, "Source Sans Pro", Helvetica, Arial, sans-serif;
 $serif: FreightText, Times, serif;
 $green: #B7C11E;
 $lightBrown: #F2EFDC;
@@ -41,7 +41,7 @@ a {
 
 #intro-slide {
 	padding-top: 0;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 	background: #fafafa;
 	border-bottom: 1px solid $lightBrown;
 	.inner {
@@ -99,6 +99,8 @@ a {
 .item {
 	margin-bottom: 20px;
 }
+
+
 
 h3 {
 	font-size: 24px;
@@ -162,4 +164,10 @@ p {
 
 .img-block {
 	margin-bottom: 25px;
+}
+
+.last-slide {
+	h3 {
+		margin-bottom: 15px;
+	}
 }
