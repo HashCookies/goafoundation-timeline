@@ -12,6 +12,7 @@ $(document).ready(function() {
 	var bigDate = $('.big-date');
 	
 	var $bgImg = $('#bg-img');
+	
 
 	$bgImg.height(winH);
 	
@@ -21,10 +22,13 @@ $(document).ready(function() {
 		$bgImg.height(winH).addClass('parallaxed').anystretch(url, { speed: 'slow', elPosition: 'fixed' });
 	}, { offset: '100%' });	
 	
+	$('.full-bg').waypoint(function() {
+	  url = $(this).attr('data-stretch');
+	  $bgImg.height(winH).addClass('parallaxed').anystretch(url, { speed: 'slow', elPosition: 'fixed' });
+	}, {
+	  offset: function() {
+	    return -$(this).height();
+	  }
+	});
 	
-	
-});
-
-$(window).load(function() {
-
 });
