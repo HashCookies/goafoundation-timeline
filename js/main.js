@@ -6,13 +6,8 @@
 	var left = winW / 3;
 	
 $(document).ready(function() {
-
-	var $main = $('#main');
-	
-	var bigDate = $('.big-date');
 	
 	var $bgImg = $('#bg-img');
-	
 
 	$bgImg.height(winH);
 	
