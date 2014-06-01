@@ -1,8 +1,70 @@
-$sans: "Open Sans", FreightSans, "Source Sans Pro", Helvetica, Arial, sans-serif;
-$serif: "Bitter", Times, serif;
+@charset "UTF-8";
+
+@font-face {
+  font-family: "goa-foundation";
+  src:url("fonts/goa-foundation.eot");
+  src:url("fonts/goa-foundation.eot?#iefix") format("embedded-opentype"),
+    url("fonts/goa-foundation.woff") format("woff"),
+    url("fonts/goa-foundation.ttf") format("truetype"),
+    url("fonts/goa-foundation.svg#goa-foundation") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "goa-foundation" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "goa-foundation" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fontawesome-webfont:before {
+  content: "a";
+}
+.icon-fontawesome-webfont-1:before {
+  content: "b";
+}
+.icon-fontawesome-webfont-3:before {
+  content: "d";
+}
+.icon-fontawesome-webfont-4:before {
+  content: "e";
+}
+.icon-basket:before {
+  content: "g";
+}
+
+
+
+$sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sansCond: "Open Sans Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$thick: "Open Sans Condensed", "Source Sans Pro", Helvetica, sans-serif;
+$serif: "Bitter", Georgia, Times, serif;
+
+$bc: #eee;
+$muteBlue:  #5c6468;
 $green: #B7C11E;
 $lightBrown: #F2EFDC;
 $vibRed: #A73C30;
+$brown: #764100;
 $blueGreen: #23A38F;
 $body: #2E313D;
 
@@ -57,7 +119,7 @@ a {
 			font-size: 42px;
 			margin-bottom: 15px;
 			line-height: 110%;
-			color: $vibRed;
+			color: $brown;
 			margin-top: 60px;
 			text-transform: uppercase;
 		}
@@ -133,10 +195,16 @@ p {
 	background: transparentize(darken($vibRed, 50%), 0.4);
 	padding-bottom: 120px;
 	padding-top: 200px;
+	text-shadow: 0px 1px #000;
 	p {
-		font-size: 24px;
+		font-size: 20px;
+		font-family: $serif;
+		color: white;
+		line-height: 32px;
+		a {
 			color: white;
-			line-height: 36px;
+			font-weight: bold;
+		}
 	}
 	h3 {
 		font-size: 36px;
@@ -151,11 +219,6 @@ p {
 
 .slide-mining {
 	background: transparentize(darken($vibRed, 50%), 0.7);
-	p a {
-		color: white;
-		font-weight: bold;
-		border-bottom: 1px solid transparentize(white, 0.5);
-	}
 }
 
 .section img {
@@ -165,7 +228,7 @@ p {
 
 .section .image-grid img {
 	width: auto;
-
+	max-width: 100%;
 }
 
 .img-block {
@@ -180,13 +243,14 @@ p {
 
 .link-out {
 	display: inline-block;
-	border: 1px solid lighten($vibRed, 40%);
 	padding: 0px 10px;
 	border-radius: 5px;
-	font-size: 13px;
+	font-weight: bold;
+	font-size: 14px;
 	text-transform: uppercase;
 	&:hover {
 		color: darken($vibRed, 20%);
 		text-decoration: none;
 	}
+
 }
