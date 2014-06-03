@@ -1,3 +1,4 @@
+@import 'bootstrap';
 @charset "UTF-8";
 
 @font-face {
@@ -101,17 +102,19 @@ a {
 }
 
 #intro-slide {
-	padding-top: 0;
-	padding-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 0px;
 	border-bottom: 1px solid $lightBrown;
 	background-image: -webkit-linear-gradient(bottom, #faf9f9 0%, #ffffff 30.6%);
 	background-image: -moz-linear-gradient(bottom, #faf9f9 0%, #ffffff 30.6%);
 	background-image: -ms-linear-gradient(bottom, #faf9f9 0%, #ffffff 30.6%);
 	background-image: linear-gradient(to top, #faf9f9 0%, #ffffff 30.6%);
+	@media (max-width: $screen-sm-min) {
+		padding-top: 0;
+	}
 	.inner {
 		padding-top: 30px;
-	
-}
+	}
 	.intro-text {
 		h2 {
 			font-family: $serif;
@@ -120,17 +123,40 @@ a {
 			margin-bottom: 15px;
 			line-height: 110%;
 			color: $brown;
-			margin-top: 60px;
+			margin-top: 10px;
 			text-transform: uppercase;
+			@media (max-width: $screen-md-min) {
+				font-size: 32px;
+			}
 		}
 		p {
-			font-size: 18px;
+			font-size: 14px;
 			font-family: $serif;
 			line-height: 150%;
+			@media (min-width: $screen-md-min) {
+				font-size: 16px;
+			}
+			@media (min-width: $screen-md-max) {
+				font-size: 18px;
+			}
 		}
 	}
 	
+	
 
+}
+
+@media (min-width: $screen-sm-max) {
+	#logo-plain {
+		height: 330px;
+		img {
+			position: absolute;
+			bottom: 0;
+			width: 90%;
+			margin-bottom: 0;
+		}
+	}
+	
 }
 
 .breadcrumb {
