@@ -6,28 +6,24 @@
 	var left = winW / 3;
 	
 $(document).ready(function() {
+	
+	var $bgImg = $('#bg-img');
 
-	var $main = $('#main');
+	$bgImg.height(winH);
 	
-	var bigDate = $('.big-date');
 	
-
-	$('.header-img').height(winH - 180).anystretch('file://localhost/Users/hashcookies/Dropbox/GoaFoundation.com/timeline/images/main-bg.jpg', { elPosition: 'fixed'} );
-	
-	$('.slide2').css({ marginTop: winH });
-	
-	$('#intro-slide').waypoint(function() {
-		$('.header-img').height(winH - 180).removeClass('parallaxed').anystretch('file://localhost/Users/hashcookies/Dropbox/GoaFoundation.com/timeline/images/main-bg.jpg', { elPosition: 'fixed'} );
-	});
-	
-	$('.slide4').waypoint(function() {
-		$('.header-img').height(winH).addClass('parallaxed').anystretch('file://localhost/Users/hashcookies/Dropbox/GoaFoundation.com/timeline/images/fcr.jpg', { speed: 'slow' });
+	$('.full-bg').waypoint(function() {
+		url = $(this).attr('data-stretch');
+		$bgImg.height(winH).addClass('parallaxed').anystretch(url, { speed: 'slow', elPosition: 'fixed' });
 	}, { offset: '100%' });	
 	
-
+	$('.full-bg').waypoint(function() {
+	  url = $(this).attr('data-stretch');
+	  $bgImg.height(winH).addClass('parallaxed').anystretch(url, { speed: 'slow', elPosition: 'fixed' });
+	}, {
+	  offset: function() {
+	    return -$(this).height();
+	  }
+	});
 	
-});
-
-$(window).load(function() {
-
 });
